@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service SquareRootService {
+    rpc SquareRoot(Number) returns (Result);
+}
+
+message Number {
+    int32 input = 1;
+}
+
+message Result {
+    int32 resulta = 1;
+}
